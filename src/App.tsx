@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Sidebar from './component/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Dashboard</h1>
-      <p>Jai Shree Mahakal</p>
+      {/* <h1>Dashboard</h1> */}
+      <Sidebar/>
+      {/* <p>Jai Shree Mahakal</p> */}
          </div>
   );
 }
