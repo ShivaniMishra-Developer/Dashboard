@@ -1,59 +1,71 @@
 .rental-tools-container {
-    background-color: #f7f7f7;
-    padding: 20px;
-    height: 30%;
-    width: 50%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #f7f7f7;
+  padding: 20px;
+  height: 35%; /* Changed from 35% to auto for responsiveness */
+  width: 66%; /* Changed from 65% to 100% for responsiveness */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Added for responsiveness */
+  margin-top: 20px;
   
-  .heading {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+}
+
+.heading {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tools-table th,
+.tools-table td {
+  border-top: 1px solid #ddd; /* Changed from border to border-top */
+  border-bottom: 1px solid #ddd; /* Changed from border to border-bottom */
+  padding: 10px;
+  text-align: left;
+}
+
+.tool-ref-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tool-ref-button:hover {
+  background-color: #3e8e41;
+}
+
+.primary-button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #23527c;
+}
+
+.duration-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Added for responsiveness */
+@media screen and (max-width: 600px) {
+  .tools-table, .tools-table th, .tools-table td {
+    display: block;
   }
-  
-  .tools-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .tools-table th,.tools-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .tool-ref-button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .tool-ref-button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .primary-button {
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .primary-button:hover {
-    background-color: #23527c;
-  }
-  
-  .duration-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}

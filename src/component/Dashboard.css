@@ -62,3 +62,27 @@ table {
     margin-top: 20px;
 
 }
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+}
+
+.status-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.status-completed {
+  background-color: green;
+}
+
+.status-incomplete {
+  background-color: pink;
+}
+
+.status-not-started {
+  background-color: yellow;
+}

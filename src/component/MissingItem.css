@@ -1,11 +1,13 @@
 .missing-tools-container {
     background-color: #f7f7f7;
     padding: 20px;
-    height: 30%;
-    width: 60%;
+    height: 32%;
+    width: 36%;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
   }
   
   .heading {
@@ -56,4 +58,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .tool-ref-button {
+    background-color: grey;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
   }

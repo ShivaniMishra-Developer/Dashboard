@@ -1,6 +1,5 @@
 import React from 'react';
 import { BiError } from "react-icons/bi";
-// import './RentalTools.css';
 import './MissingItem.css'
 
 interface tools {
@@ -8,6 +7,8 @@ interface tools {
   toolRef: number;
   TeamMember: {
     name: string;
+    img:string;
+    secondImage:string;
   };
   status: string;
   duration: string;
@@ -19,7 +20,6 @@ interface tools {
   packagesReceived: number;
   processedPackages: number;
 }
-
 
 interface RentalToolsProps {
   tools: tools[];
@@ -38,27 +38,25 @@ const MissingItem: React.FC<RentalToolsProps> = ({ tools }) => {
       <table className="tools-table">
         <thead>
           <tr>
-           
             <th>Tool Ref.</th>
             <th>Team Member</th>
-           
           </tr>
         </thead>
         <tbody>
           {tools.map((tool) => (
             <tr key={tool.toolRef}>
-              <td>{tool.id}</td>
-              {/* <td>
+              <td>
                 <button type="button" className="tool-ref-button">
                   {tool.toolRef}
                 </button>
-              </td> */}
-              <td>{tool.TeamMember.name} <button type="button" className="primary-button">
-                  Primary
+              </td>
+              <td>
+                <img style={{width:'20px',height:'20px',borderRadius:'100%'}} src={tool.TeamMember.img} alt=""/>
+                {tool.TeamMember.name}
+                <img style={{width:'20px',height:'20px',borderRadius:'100%'}} src={tool.TeamMember.secondImage} alt=""/>
+               <button type="button" className="primary-button">
+                  Details
                 </button></td>
-            
-                
-              {/* </td> */}
             </tr>
           ))}
         </tbody>

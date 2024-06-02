@@ -1,5 +1,4 @@
 import React from 'react';
-// import './WorkOrderStatus.css'
 import './ReceptionSum.css'
 
 interface statuses {
@@ -31,7 +30,7 @@ const ReceptionSum: React.FC<RentalToolsProps> = ({ status }) => {
         <h1>Reception Summary</h1>
       </div>
       <div className="status-list">
-        {status.map((statusNew) => (
+        {status.slice(0,2).map((statusNew) => (
           <div className="status-item" key={statusNew.id}>
             <h1>{statusNew.status}</h1>
           </div>

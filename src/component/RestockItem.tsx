@@ -1,6 +1,5 @@
-import React from 'react';
-// import './RentalTools.css';
-import './RestockItem.css'
+import React from "react";
+import "./RestockItem.css";
 
 interface tools {
   id: number;
@@ -19,43 +18,32 @@ interface tools {
   processedPackages: number;
 }
 
-
 interface RentalToolsProps {
   tools: tools[];
 }
 
 const RestockItem: React.FC<RentalToolsProps> = ({ tools }) => {
-  console.log(tools)
+  console.log(tools);
   return (
     <div className="restockItem-container">
       <div className="heading">
-        <h1>
-           Restock Item
-        </h1>
+        <h1>Restock Item</h1>
       </div>
       <table className="tools-table">
         <thead>
           <tr>
-            <th>Work Order</th>
             <th>Tool Ref.</th>
-            <th>Team Member</th>
-            <th>Status</th>
-            <th>Duration</th>
+            <th>Tool/Equipmenets</th>
+            <th>Stock Status</th>
           </tr>
         </thead>
         <tbody>
           {tools.map((tool) => (
             <tr key={tool.id}>
               <td>{tool.id}</td>
+              <td>{tool.toolEquipment}</td>
               <td>
-                <button type="button" className="tool-ref-button">
-                  {tool.toolRef}
-                </button>
-              </td>
-              <td>{tool.TeamMember.name}</td>
-              <td>{tool.status}</td>
-              <td className="duration-container">
-                {tool.duration}
+                {tool.stockStatus}{" "}
                 <button type="button" className="primary-button">
                   Primary
                 </button>

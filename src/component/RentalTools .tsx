@@ -7,6 +7,8 @@ interface tools {
   toolRef: number;
   TeamMember: {
     name: string;
+    img:string;
+    secondImage:string;
   };
   status: string;
   duration: string;
@@ -18,7 +20,6 @@ interface tools {
   packagesReceived: number;
   processedPackages: number;
 }
-
 
 interface RentalToolsProps {
   tools: tools[];
@@ -52,7 +53,11 @@ const RentalTools: React.FC<RentalToolsProps> = ({ tools }) => {
                   {tool.toolRef}
                 </button>
               </td>
-              <td>{tool.TeamMember.name}</td>
+              <td>
+                <img style={{width:'20px',height:'20px',borderRadius:'100%'}} src={tool.TeamMember.img} alt=""/>
+                {tool.TeamMember.name}
+                <img style={{width:'20px',height:'20px',borderRadius:'100%'}} src={tool.TeamMember.secondImage} alt=""/>
+              </td>
               <td>{tool.status}</td>
               <td className="duration-container">
                 {tool.duration}
