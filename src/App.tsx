@@ -1,14 +1,17 @@
 import React from 'react';
-// import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from './component/Dashboard';
 import Sidebar from './component/Sidebar';
-
-function App() {
+import  "./App.css"
+const App: React.FC = () => {
   return (
     <div className="App">
-      {/* <h1>Dashboard</h1> */}
-      <Sidebar/>
-      {/* <p>Jai Shree Mahakal</p> */}
-         </div>
+            <Sidebar/>
+<div className='Dashboard'>
+<Dashboard />
+</div>
+    
+    </div>
   );
 }
 

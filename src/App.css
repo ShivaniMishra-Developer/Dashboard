@@ -1,7 +1,19 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: red;
 }
-
+.Dashboard{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

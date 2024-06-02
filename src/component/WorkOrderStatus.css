@@ -1,0 +1,36 @@
+.work-order-status-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    height: 30%;
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .status-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .status-item {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .status-item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
