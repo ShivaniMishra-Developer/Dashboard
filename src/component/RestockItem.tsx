@@ -1,8 +1,5 @@
-
 import React from "react";
-import { FaTools } from "react-icons/fa";
-import "./RentalTools.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import "./RestockItem.css";
 
 interface tools {
   id: number;
@@ -31,40 +28,36 @@ interface RentalToolsProps {
 const RestockItem: React.FC<RentalToolsProps> = ({ tools }) => {
   console.log(tools);
   return (
-    <div className="rental-tools-container">
-      <div className="heading1" style={{ backgroundColor: "none" }}>
-        <span>
-Restock Item        </span>
+    <div className="restockItem-container">
+      <div className="heading1">
+        <span>Restock Item</span>
       </div>
       <div className="table-responsive">
-        <table className="table">
+        <table className="table centered-table">
           <thead>
             <tr>
-              <th>Tool Ref.</th>
-              <th>Tool/Equipmenet</th>
-              <th>Stock/Status</th>
-
+              <th className="centered-header">Tool Ref.</th>
+              <th className="centered-header">Tool/Equipmenet</th>
+              <th className="centered-header">Stock Status</th>
             </tr>
           </thead>
           <tbody>
             {tools.map((tool) => (
               <tr key={tool.id}>
-            <button type="button" className="btn btn-light">
-              {tool.toolRef}
-            </button>
-                <td className="text-left">
-                  
-                  {tool.toolEquipment}
-                 
+                <td className="centered-cell">
+                  <button type="button" className="btn btn-light">
+                    {tool.toolRef}
+                  </button>
                 </td>
-                <td style={{ alignItems:'center', display:'flex' , justifyContent:'space-between'}}> 
-                <div style={{ backgroundColor: tool.circleColor, width: '20px', height: '20px', borderRadius: '50%'}}></div>
-    <p>{tool.stockStatus}</p>
-    <button type="button" className="btn btn-primary ">
+                <td className="centered-cell">{tool.toolEquipment}</td>
+                <td className="centered-cell-flex">
+                  <div className="circleStyle" style={{ backgroundColor: tool.circleColor }}></div>
+                  <p>{tool.stockStatus}</p>
+                  <button type="button" className="btn btn-primary ">
                     Details
                   </button>
-                  </td>
-                <td></td>{" "}
+                </td>
+                <td className="centered-cell"></td>{" "}
               </tr>
             ))}
           </tbody>
@@ -75,4 +68,3 @@ Restock Item        </span>
 };
 
 export default RestockItem;
-

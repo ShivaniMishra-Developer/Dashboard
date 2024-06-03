@@ -8,7 +8,9 @@
   margin-top: 20px;
   border-width: 1px solid  #b7bbbb;
 }
-
+.rentalTable{
+  text-align: center;
+}
 .heading1 {
   background-color: white;
   color: black;
@@ -26,6 +28,11 @@
 .tools-table td {
   border: none;
 }
+.centered-header {
+  text-align: center;
+  vertical-align: middle;
+  color: #b7bbbb;
+}
 
 .tool-ref-button {
   background-color: #4CAF50;
@@ -34,6 +41,14 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+.centered-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.spaced-button {
+  margin-left: 30px;
 }
 
 .tool-ref-button:hover {
@@ -84,11 +99,27 @@
   justify-content: space-between;
 }
 .rentalImage{
-  width:20px;
-  height:20px;
+  width:38px;
+  height:35px;
   border-radius:100%;
+  margin-left: 10px;
+}
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.circleStyle {
+  background-color: inherit; /* This will be overridden by inline style */
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
+.durationStyle {
+  color: #333;
+  text-align: center;
+}
 /* Added for responsiveness */
 /* @media screen and (max-width: 600px) {
   .tools-table, .tools-table th, .tools-table td {

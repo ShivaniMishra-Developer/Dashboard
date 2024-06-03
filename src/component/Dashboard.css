@@ -8,13 +8,15 @@
 .firstDash {
   display: flex;
   gap: 26px;
-  width: 100% !important;
+  width: 90vw !important;
+ 
 }
 .secondDash {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   gap: 26px;
+  /* height: 70vh !important; */
   align-items: center;
 }
 .thirdDash {
@@ -22,6 +24,7 @@
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 body {
   line-height: 1;

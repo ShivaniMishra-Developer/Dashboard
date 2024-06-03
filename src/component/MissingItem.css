@@ -1,7 +1,7 @@
 .missing-tools-container {
   padding: 20px;
   height: 43%;
-  width: 100%; /* Changed from 65% to 100% for responsiveness */
+  width: 60%; /* Changed from 65% to 100% for responsiveness */
   border: 1px solid #b7bbbb;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -9,9 +9,12 @@
   border-width: 1px solid  #b7bbbb;
 
   }
+  .spaced-item {
+    margin-right: 10px;
+  }
   
   .heading3 {
-  
+    background-color: none;
 background-color: white;
   color: black;
   padding: 10px;

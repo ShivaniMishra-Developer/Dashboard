@@ -1,11 +1,11 @@
 .work-order-status-container {
   border: 1px solid #b7bbbb;
   border-radius: 30px;
-    padding: 20px;
-    height: 43%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
     margin-top: 20px;
     border: 1px solid #b7bbbb;
-    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   

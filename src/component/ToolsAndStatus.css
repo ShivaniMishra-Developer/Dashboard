@@ -1,13 +1,12 @@
 .tools-and-status-container {
   border: 1px solid #b7bbbb;
   border-radius: 30px;
-    padding: 20px;
-    height:60%;
-    width: 80%;
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  }
-  .status-item{
+  padding: 20px;
+  height: 29vh;
+  width: 80%;
+  margin-top: 20px;
+}  
+.status-item{
     width: 100%;
     height: 70px;
     display: flex;
@@ -18,7 +17,7 @@
   .heading4 {
     color: black;
     padding: 10px;
-    font-size: 20px;
+    font-size: 28px;
     text-align: left;
     font-weight: bold;
   }
@@ -45,4 +44,8 @@
   
   .tool-ref-button:hover {
     background-color: #3e8e41;
+  }
+  .imageStyle {
+    width: 80px;
+    height: 75px;
   }

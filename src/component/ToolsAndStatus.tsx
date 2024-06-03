@@ -40,7 +40,7 @@ const ToolsAndStatus: React.FC<RentalToolsProps> = ({ status }) => {
       <div>
         {status.slice(0,2).map((statusNew) => (
           <div className="d-flex justify-content-between align-items-center" key={statusNew.id}>
-          <img src={statusNew.TeamMember.thirdImg} alt="" style={{width: '60px', height: '45px'}} />
+          <img src={statusNew.TeamMember.thirdImg} alt="" className='imageStyle'/>
             <span>Rental Items </span>
             <CircularProgressbar 
   value={statusNew.rentalItems} 
