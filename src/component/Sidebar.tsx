@@ -11,6 +11,8 @@ const Sidebar: React.FC = () => {
     <div className="sidebar">
       <div className="sidebar-logo"></div>
       <nav className="sidebar-navigation">
+        <div className="blankBox">
+</div>
         <ul>
           <li>
             <a href="#">

@@ -47,12 +47,13 @@
 
 .menu-icon {
   font-size: 40px;
+  justify-content: center;
+  
 }
 
 .sidebar-settings {
   width: 100%;
   padding: 20px;
-  border-top: 1px solid #34495e;
 }
 
 .sidebar-settings a {
@@ -60,4 +61,14 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
+}
+.blankBox{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
