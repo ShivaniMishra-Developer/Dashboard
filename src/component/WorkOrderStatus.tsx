@@ -28,7 +28,7 @@ Chart.register(ArcElement, Tooltip, Legend);
 
 const WorkOrderStatus: React.FC<RentalToolsProps> = ({ status }) => {
   const chartData = {
-    labels: status.map((status) => status.status),
+    labels: status.map((item) => `${item.status} - ${item.id}`),
     datasets: [{
       label: 'Work Order Status',
       data: status.map((status) => 1), // assuming each status has a count of 1
@@ -45,13 +45,22 @@ const WorkOrderStatus: React.FC<RentalToolsProps> = ({ status }) => {
 
   return (
     <div className="work-order-status-container">
-      <div className="heading">
-        <h1>Work order status</h1>
-      </div>
+      <span className="heading2" >
+        <span>Work order status</span>
+      </span>
      
       <div className="chart-container">
-        <Doughnut data={chartData} />
-      </div>
+      <Doughnut 
+  data={chartData} 
+  options={{
+    plugins: {
+      legend: {
+        position: 'right',
+      },
+    },
+  }} 
+/>   
+</div>
     </div>
   );
 };

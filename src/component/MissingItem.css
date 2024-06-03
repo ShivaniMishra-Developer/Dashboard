@@ -1,20 +1,22 @@
 .missing-tools-container {
-    background-color: #f7f7f7;
-    padding: 20px;
-    height: 32%;
-    width: 36%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  padding: 20px;
+  height: 43%;
+  width: 100%; /* Changed from 65% to 100% for responsiveness */
+  border: 1px solid #b7bbbb;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-width: 1px solid  #b7bbbb;
 
   }
   
-  .heading {
-    background-color: #333;
-    color: #fff;
+  .heading3 {
+  
+    color: black;
     padding: 10px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
   }
   
   .tools-table {

@@ -1,18 +1,19 @@
 .restockItem-container {
-    background-color: #f7f7f7;
+  border: 1px solid #b7bbbb;
+  border-radius: 30px;
     padding: 20px;
-    height: 30%;
-    width: 56%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #b7bbbb;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .heading {
-    background-color: #333;
-    color: #fff;
+  .heading5 {
+    background-color: white;
+    color: black;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
   }
   
   .status-list {
@@ -31,6 +32,9 @@
   }
   
   .status-item h1 {
-    font-size: 24px;
+    font-size: 2px;
     margin-bottom: 10px;
+  }
+  .smaller-text {
+    font-size: 1.5rem;
   }

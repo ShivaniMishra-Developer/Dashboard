@@ -1,6 +1,6 @@
 /* Dashboard.css */
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -19,14 +19,46 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
+} */
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
-}
+} */
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+   
+    width: 100% !important;
+    /* background-color: red; */
 
+
+
+
+}
+.firstDash{
+  display: flex;
+  gap:26px;
+  width: 100% !important;
+  
+}
+.secondDash{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+gap:26px;
+  align-items: center;
+}
+.thirdDash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+}
 body {
     line-height: 1;
 }
@@ -63,11 +95,11 @@ table {
 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .dashboard-container {
     flex-direction: column;
   }
-}
+} */
 
 .status-circle {
   height: 20px;

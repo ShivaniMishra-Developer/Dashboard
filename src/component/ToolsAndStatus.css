@@ -1,9 +1,9 @@
 .tools-and-status-container {
-    background-color: #f7f7f7;
+  border: 1px solid #b7bbbb;
+  border-radius: 30px;
     padding: 20px;
-    height:32%;
-    width: 60%;
-    /* border: 1px solid #ddd; */
+    height:60%;
+    width: 80%;
     border-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   }
@@ -15,11 +15,12 @@
 
 
   }
-  .heading {
-    background-color: #333;
-    color: #fff;
+  .heading4 {
+    color: black;
     padding: 10px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
   }
   
   .tools-table {

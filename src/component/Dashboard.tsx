@@ -1,8 +1,6 @@
 import React from 'react';
-// import RentalTools from './RentalTools';
 import RentalTools from './RentalTools ';
 import WorkOrderStatus from './WorkOrderStatus';
-// import ToolsAndStatus from './ToolsAndStatus';
 import MissingItem from './MissingItem';
 import ReceptionSum from './ReceptionSum';
 import { Provider } from 'react-redux';
@@ -23,6 +21,7 @@ interface RentalToolProps {
 
   };
   status: string;
+  circleColor: string;
   duration: string;
   missingItem: boolean;
   rentalItems: number;
@@ -45,6 +44,7 @@ const DashbordAllData: RentalToolProps[] = [
       fourthImg: 'https://img.freepik.com/free-vector/illustration-gear-doodle-icon_53876-5596.jpg?t=st=1717343004~exp=1717346604~hmac=66fe71785cd86efbcd4483b1a747934252f07bfc52735299b8fd35e54c1aa056&w=826',
     },
     status: 'completed',
+    circleColor: '#008000',
     duration: '15:00',
     missingItem: true,
     rentalItems: 20,
@@ -68,6 +68,7 @@ const DashbordAllData: RentalToolProps[] = [
 
     },
     status: 'Incomplete',
+    circleColor: '#ff0000',
     duration: '3:00',
     missingItem: false,
     rentalItems: 5,
@@ -89,6 +90,8 @@ const DashbordAllData: RentalToolProps[] = [
 
     },
     status: 'Not Statretd',
+    circleColor: '#FFA500',
+
     duration: '6:00',
     missingItem: true,
     rentalItems: 8,
@@ -104,18 +107,25 @@ const DashbordAllData: RentalToolProps[] = [
 const Dashboard: React.FC = () => {
   return (
     <Provider store={store}>
-      {/* <div className="dashboard-container"> */}
-          <RentalTools tools={DashbordAllData} />
+      <div className='mainDiv'  >
+      <div className='firstDash' style={{gap:'20px', display:'flex' }}>
+      <RentalTools tools={DashbordAllData} />
           <WorkOrderStatus status={DashbordAllData} />
-      {/* </div> */}
-      {/* <div className="dashboard-container"> */}
-       <MissingItem tools={DashbordAllData} />
+      </div>
+       
+     <div className='secondDash'>
+     <MissingItem tools={DashbordAllData} />
        <ToolsAndStatus status={DashbordAllData} />
-   {/* </div> */}
-   {/* <div className="dashboard-container"> */}
-   <RestockItem tools={DashbordAllData} />
+     </div>
+       <div className='thirdDash'>
+       <RestockItem tools={DashbordAllData} />
           <ReceptionSum status={DashbordAllData}/>
-   {/* </div> */}
+       </div>
+      </div>
+   
+   
+ 
+  
     </Provider>
   );
 };

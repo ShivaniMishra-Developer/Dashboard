@@ -7,18 +7,18 @@ import Sidebar from './component/Sidebar';
 import  "./App.css"
 const App: React.FC = () => {
   return (
-    <> <div className="App">
+    <> 
+    <div className='sideContainer'>
+    <div className='fullDash'>
     <Sidebar/>
 <div className='Dashboard'>
 <Dashboard />
 </div>
 
-</div>
-{/* <BrowserRouter>
-<Routes>
-  <Route path='/' element={<Dashboard/>}/>
-</Routes>
-</BrowserRouter> */}
+    </div>
+
+    </div>
+
 </>
     );
 }

@@ -1,20 +1,22 @@
 .work-order-status-container {
-    background-color: #f7f7f7;
+  border: 1px solid #b7bbbb;
+  border-radius: 30px;
     padding: 20px;
-    height: 30%;
-    width: 30%;
+    height: 43%;
     margin-top: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: 1px solid #b7bbbb;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .heading {
-    background-color: #333;
-    color: #fff;
+  .heading2 {
+    background-color: white;
+    color: black;
     padding: 10px;
-    text-align: center;
-  }
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    }
   
   .status-list {
     display: flex;
@@ -32,11 +34,11 @@
   }
   
   .status-item h1 {
-    font-size: 24px;
+    font-size: 15px;
     margin-bottom: 10px;
   }
   .chart-container {
-  width: 150px;
-  height: 150px;
+  display: flex;
+  justify-content: left;
   margin: 0 auto;
 }

@@ -1,34 +1,30 @@
 .rental-tools-container {
-  background-color: #f7f7f7;
   padding: 20px;
-  height: 35%; /* Changed from 35% to auto for responsiveness */
-  width: 66%; /* Changed from 65% to 100% for responsiveness */
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  height: 43%;
+  width: 100%; /* Changed from 65% to 100% for responsiveness */
+  border: 1px solid #b7bbbb;
+  border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: auto; /* Added for responsiveness */
   margin-top: 20px;
-  
+  border-width: 1px solid  #b7bbbb;
 }
 
-.heading {
-  background-color: #333;
-  color: #fff;
+.heading1 {
+  background-color: white;
+  color: black;
   padding: 10px;
-  text-align: center;
+  font-weight: bold;
+  text-align: left;
+  font-size: 30px;
 }
 
 .tools-table {
-  width: 100%;
-  border-collapse: collapse;
+  border: none;
 }
 
-.tools-table th,
+
 .tools-table td {
-  border-top: 1px solid #ddd; /* Changed from border to border-top */
-  border-bottom: 1px solid #ddd; /* Changed from border to border-bottom */
-  padding: 10px;
-  text-align: left;
+  border: none;
 }
 
 .tool-ref-button {
@@ -63,9 +59,39 @@
   align-items: center;
 }
 
+/* RentalTools.module.css */
+.tableHeader, .tableData {
+  color: #333;
+  text-align: center;
+}
+
+.tableDataImage {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.statusCircle {
+  background-color: #333; /* This color will be overridden by inline style */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.statusContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.rentalImage{
+  width:20px;
+  height:20px;
+  border-radius:100%;
+}
+
 /* Added for responsiveness */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .tools-table, .tools-table th, .tools-table td {
     display: block;
   }
-}
+} */
