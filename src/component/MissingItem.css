@@ -12,12 +12,12 @@
   
   .heading3 {
   
-    color: black;
-    padding: 10px;
-    font-size: 20px;
-    text-align: left;
-    font-weight: bold;
-  }
+background-color: white;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 30px;  }
   
   .tools-table {
     width: 100%;

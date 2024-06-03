@@ -1,7 +1,7 @@
 import React from "react";
-import { FaTools } from "react-icons/fa";
+import { BiError } from "react-icons/bi";
 import "./RentalTools.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface tools {
   id: number;
@@ -10,6 +10,7 @@ interface tools {
     name: string;
     img: string;
     secondImage: string;
+    thirdImg: string;
   };
   status: string;
   circleColor: string;
@@ -31,9 +32,9 @@ const MissingItem: React.FC<RentalToolsProps> = ({ tools }) => {
   console.log(tools);
   return (
     <div className="rental-tools-container">
-      <div className="heading1" style={{ backgroundColor: "none" }}>
+      <div className="heading1" >
         <span>
-          <FaTools />
+        <BiError />
           Missing Item
         </span>
       </div>
@@ -48,7 +49,9 @@ const MissingItem: React.FC<RentalToolsProps> = ({ tools }) => {
           <tbody>
             {tools.map((tool) => (
               <tr key={tool.id}>
-                <td>{tool.toolRef}</td>
+            <button type="button" className="btn btn-light">
+              {tool.toolRef}
+            </button>
                 <td className="text-left">
                   <img
                     style={{

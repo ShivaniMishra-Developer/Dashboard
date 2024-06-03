@@ -1,105 +1,65 @@
-/* Dashboard.css */
-
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-} */
-
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-} */
-.mainDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:10px;
-   
-    width: 100% !important;
-    /* background-color: red; */
-
-
-
-
-}
-.firstDash{
+.mainDiv {
   display: flex;
-  gap:26px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
   width: 100% !important;
-  
 }
-.secondDash{
+.firstDash {
+  display: flex;
+  gap: 26px;
+  width: 100% !important;
+}
+.secondDash {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-gap:26px;
+  gap: 26px;
   align-items: center;
 }
-.thirdDash{
+.thirdDash {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Custom styles */
 .dashboard-container {
   display: flex;
-  /* flex-wrap: wrap; */
   width: 100%;
   height: 100%;
   background-color: green;
 }
-.missing-item-container{
-    margin-top: 20px;
-
+.missing-item-container {
+  margin-top: 20px;
 }
-
-/* @media screen and (max-width: 768px) {
-  .dashboard-container {
-    flex-direction: column;
-  }
-} */
 
 .status-circle {
   height: 20px;

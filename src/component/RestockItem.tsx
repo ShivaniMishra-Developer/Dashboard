@@ -49,7 +49,9 @@ Restock Item        </span>
           <tbody>
             {tools.map((tool) => (
               <tr key={tool.id}>
-                <td>{tool.toolRef}</td>
+            <button type="button" className="btn btn-light">
+              {tool.toolRef}
+            </button>
                 <td className="text-left">
                   
                   {tool.toolEquipment}

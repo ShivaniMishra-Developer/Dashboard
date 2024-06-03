@@ -14,6 +14,7 @@ interface statuses {
     name: string;
     img: string;
     fourthImg: string;
+    thirdImg:string;
   };
   status: string;
   duration: string;
@@ -39,7 +40,7 @@ const ToolsAndStatus: React.FC<RentalToolsProps> = ({ status }) => {
       <div>
         {status.slice(0,2).map((statusNew) => (
           <div className="d-flex justify-content-between align-items-center" key={statusNew.id}>
-          <img src={statusNew.TeamMember.fourthImg} alt="" style={{width: '60px', height: '45px'}} />
+          <img src={statusNew.TeamMember.thirdImg} alt="" style={{width: '60px', height: '45px'}} />
             <span>Rental Items </span>
             <CircularProgressbar 
   value={statusNew.rentalItems} 
